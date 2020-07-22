@@ -88,7 +88,6 @@ class XHProfRuns_Default implements iXHProfRuns {
   {
 	global $_xhprof;
 	require_once XHPROF_LIB_ROOT.'/utils/Db/'.$_xhprof['dbadapter'].'.php';
-	
     $class = self::getDbClass();
     $this->db = new $class($_xhprof);
     $this->db->connect();
