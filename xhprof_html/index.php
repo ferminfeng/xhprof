@@ -7,7 +7,7 @@ include_once XHPROF_LIB_ROOT . '/display/xhprof.php';
 include(XHPROF_LIB_ROOT . "/utils/common.php");
 
 if (false !== $controlIPs && !in_array($_SERVER['REMOTE_ADDR'], $controlIPs)) {
-    die("You do not have permission to view this page.");
+    die("You do not have permission to view this page.ip:" . $_SERVER['REMOTE_ADDR']);
 }
 
 unset($controlIPs);
